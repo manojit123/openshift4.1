@@ -1,6 +1,6 @@
 # Installing  Openshift 4.1 cluster on vSphere step by step<br/>
 
-In our lap setup we build openshift in vsphere6.5 with following nodes.All the nodes have  4 Core 16 GB Mem and 120 GB HDD with thin provision. <br/>
+In our lap setup we build openshift in vsphere6.5 with following nodes.All the nodes ( 3 master nodes, 2 infra nodes, 3 compute nodes and 1 bastion node) have  4 Core 16 GB Mem and 120 GB HDD with thin provision. All the prerequiste such as DNS, DHCP,TFTP, MATCHBOX, HAPROXY etc has been configured in the bastion node. <br/>
 
 basedomain=gtslabs.ibm.com <br/>
 clustername=ocp4 <br/>

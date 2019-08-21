@@ -253,7 +253,7 @@ disk.EnableUUID: Specify TRUE. <br/>
 Reference-style: 
 ![alt text][logo]
 
-[logo]:("Logo Title Text 1")
+[logo]:(https://github.com/manojit123/openshift4.1/blob/master/configfiles/Screenshot%202019-08-21%20at%2010.46.59%20PM.png"Logo Title Text 1")
 
 
 We can now boot the virtual machines in PXE mode, in no specific order. When booting the machines use the ignition configuration to install the cluster. We can monitor the deployment via openshift-install command. It checks that the initial cluster operators are available: <br/>

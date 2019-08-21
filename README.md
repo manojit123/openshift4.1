@@ -1,9 +1,8 @@
 # openshift4.1 based on vSphere documentation. 
 In our lap setup we build openshift in vsphere6.5 with following nodes.All the nodes have  4 Core 16 GB Mem and 120 GB HDD with thin provision.
 
-
-|  Nodes     |     Ip Address             |
-|----------  |: ----------                |
+| Nodes | IP Address |
+|---|:---|
 |bastion     |   192.168.60.254(static IP)|
 |bootstrap-0 |   192.168.60.253(dhcp IP)  |
 |master-0    |   192.168.60.10(dhcp IP)   |

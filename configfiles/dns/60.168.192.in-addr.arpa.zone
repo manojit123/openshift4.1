@@ -1,0 +1,17 @@
+$TTL 900
+@ IN SOA bastion.ocp4.gtslabs.ibm.com. hostmaster.ocp4.gtslabs.ibm.com. (
+2019062001 1D 1H 1W 3H
+)
+
+  IN NS bastion.ocp4.gtslabs.ibm.com.
+
+10 IN PTR master-0.ocp4.gtslabs.ibm.com.
+11 IN PTR master-1.ocp4.gtslabs.ibm.com.
+12 IN PTR master-2.ocp4.gtslabs.ibm.com.
+20 IN PTR infnod-0.ocp4.gtslabs.ibm.com.
+21 IN PTR infnod-1.ocp4.gtslabs.ibm.com.
+30 IN PTR cptnod-0.ocp4.gtslabs.ibm.com.
+31 IN PTR cptnod-1.ocp4.gtslabs.ibm.com.
+32 IN PTR cptnod-1.ocp4.gtslabs.ibm.com.
+253 IN PTR bootstrap-0.ocp4.gtslabs.ibm.com.
+254 IN PTR bastion.ocp4.gtslabs.ibm.com.

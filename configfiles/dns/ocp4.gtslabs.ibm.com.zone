@@ -1,0 +1,27 @@
+$TTL 900
+@ IN SOA bastion.ocp4.gtslabs.ibm.com. hostmaster.ocp4.gtslabs.ibm.com. (
+2019062002 1D 1H 1W 3H
+)
+
+  IN NS bastion.ocp4.gtslabs.ibm.com.
+
+bastion      IN  A  192.168.60.254
+bootstrap-0  IN  A  192.168.60.253
+master-0     IN  A  192.168.60.10
+master-1     IN  A  192.168.60.11
+master-2     IN  A  192.168.60.12
+infnod-0     IN  A  192.168.60.20
+infnod-1     IN  A  192.168.60.21
+cptnod-0     IN  A  192.168.60.30
+cptnod-1     IN  A  192.168.60.31
+cptnod-2     IN  A  192.168.60.32
+api          IN  A  192.168.60.254
+api-int      IN  A  192.168.60.254
+apps         IN  A  192.168.60.254
+*.apps       IN  A  192.168.60.254
+etcd-0       IN  A  192.168.60.10
+etcd-1       IN  A  192.168.60.11
+etcd-2       IN  A  192.168.60.12
+_etcd-server-ssl._tcp  IN  SRV 0 10 2380 etcd-0.ocp4.gtslabs.ibm.com.
+_etcd-server-ssl._tcp  IN  SRV 0 10 2380 etcd-1.ocp4.gtslabs.ibm.com.
+_etcd-server-ssl._tcp  IN  SRV 0 10 2380 etcd-2.ocp4.gtslabs.ibm.com.

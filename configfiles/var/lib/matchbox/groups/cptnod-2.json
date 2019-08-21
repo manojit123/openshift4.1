@@ -1,0 +1,14 @@
+{
+"id": "cptnod-2",
+
+"name": "OCP 4 - Compute node #3",
+
+"profile": "cptnod",
+
+"selector": {
+
+"mac": "00:50:56:96:c6:4d"
+
+}
+
+}

@@ -1,0 +1,14 @@
+{
+"id": "infnod-0",
+
+"name": "OCP 4 - Infrastructure Node #1",
+
+"profile": "infnod",
+
+"selector": {
+
+"mac": "00:50:56:96:65:85"
+
+}
+
+}

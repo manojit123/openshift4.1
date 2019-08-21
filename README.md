@@ -1,4 +1,4 @@
-# Installing a Openshift 4.1 cluster on vSphere 6.5
+# Installing  Openshift 4.1 cluster on vSphere 6.5
 
 In our lap setup we build openshift in vsphere6.5 with following nodes.All the nodes have  4 Core 16 GB Mem and 120 GB HDD with thin provision.
 

@@ -237,6 +237,7 @@ You need to create VM the folder matching the mac address with the required reso
 
 From the Latency Sensitivity list, select High.
 Click Edit Configuration, and on the Configuration Parameters window, click Add Configuration Params. Define the following parameter names and values: <br/>
+
 guestinfo.ignition.config.data: Paste the contents of the base64-encoded Ignition config file for respective node type <br/>
 
 guestinfo.ignition.config.data.encoding: Specify base64. <br/>

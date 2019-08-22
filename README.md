@@ -2,10 +2,10 @@
 
 In our lab setup we build openshift in vsphere6.5 with following nodes.All the nodes ( 3 master nodes, 2 infra nodes, 3 compute nodes and 1 bastion node) have  4 Core 16 GB Mem and 120 GB HDD with thin provision. All the prerequiste such as DNS, DHCP,TFTP, MATCHBOX, HAPROXY etc have been configured in the bastion node. <br/>
 
-basedomain=gtslabs.ibm.com <br/>
-clustername=ocp4 <br/>
+`basedomain=gtslabs.ibm.com` <br/>
+`clustername=ocp4` <br/>
 
-As per openshift documentation all the host will need to resolve as nodename.clustername.basedoamin i.e nodename.ocp4.gtslabs.ibm.com
+As per openshift documentation all the host will need to resolve as `nodename.clustername.basedomain` i.e `master-0.ocp4.gtslabs.ibm.com`
 
 | Nodes | IP Address |
 |---|:---|

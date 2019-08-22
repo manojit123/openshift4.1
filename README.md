@@ -32,35 +32,36 @@ DNS server: 192.168.60.1 <br/>
 DNS domain: ocp4.gtslabs.ibm.com <br/> 
 
 ## Then register the machine with Red Hat Subscription Manager and enable the base repositories for Red Hat Enterprise Linux 8
-
-subscription-manager register --username=<rhn_username> <br/>
-subscription-manager attach --pool=<rhn_pool> <br/>
-subscription-manager repos --disable='*' \
+```
+#subscription-manager register --username=<rhn_username>
+#subscription-manager attach --pool=<rhn_pool>
+#subscription-manager repos --disable='*' \
 --enable=rhel-8-for-x86_64-baseos-rpms \
---enable=rhel-8-for-x86_64-appstream-rpms <br/>
-dnf update -y <br/>
-reboot <br/>
-
+--enable=rhel-8-for-x86_64-appstream-rpms
+#dnf update -y
+#reboot
+```
 ## Setup DNS
-
-dnf install -y bind-chroot <br/>
-modify the /etc/named.conf as per DNS config files <br/>
+```
+#dnf install -y bind-chroot
+```
+modify the `/etc/named.conf` as per DNS config files <br/>
  
-create the forward zone file "/var/named/ocp4.gtslabs.ibm.com.zone" <br/>
-And the reverse zone file "/var/named/60.168.192.in-addr.arpa.zone" <br/>
+create the forward zone file `/var/named/ocp4.gtslabs.ibm.com.zone` <br/>
+And the reverse zone file `/var/named/60.168.192.in-addr.arpa.zone` <br/>
 Now  start the named-chroot service <br/>
-
-systemctl enable --now named-chroot.service <br/>
-
+```
+#systemctl enable --now named-chroot.service
+```
 And allow the service to be accessed at the firewall <br/>
-
-firewall-cmd --permanent --add-service=dns <br/>
-firewall-cmd --reload <br/>
-
-update /etc/resolv.conf <br/>
-
-echo -e "search ocp4.gtslabs.ibm.com\nnameserver 192.168.67.254" > /etc/resolv.conf <br/>
-
+```
+#firewall-cmd --permanent --add-service=dns
+#firewall-cmd --reload
+```
+update `/etc/resolv.conf` <br/>
+```
+#echo -e "search ocp4.gtslabs.ibm.com\nnameserver 192.168.67.254" > /etc/resolv.conf
+```
 
 ## Setup TFTP Server
 

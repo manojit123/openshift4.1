@@ -31,7 +31,7 @@ Gateway: 192.168.60.1 <br/>
 DNS server: 192.168.60.1 <br/>
 DNS domain: ocp4.gtslabs.ibm.com <br/> 
 
-## Then register the machine with Red Hat Subscription Manager and enable the base repositories for Red Hat Enterprise Linux 8
+## Register the machine with Red Hat Subscription Manager and enable the base repositories for Red Hat Enterprise Linux 8
 ```
 # subscription-manager register --username=<rhn_username>
 # subscription-manager attach --pool=<rhn_pool>

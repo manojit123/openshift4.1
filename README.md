@@ -160,7 +160,7 @@ We are now ready to deploy OpenShift 4.1. There are a few steps to follow, but i
 
 ssh-keygen -t rsa -b 2048 -N ''  -f /root/.ssh/id_rsa
 
-Get Pull secret for vsphere deployment from https://try.openshift.com
+Get Pull secret for vsphere deployment from https://cloud.redhat.com/openshift/install/vsphere/user-provisioned
 
 
 ## Creating Installation configuration

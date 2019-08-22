@@ -278,6 +278,11 @@ master-1.ocp4.gtslabs.ibm.com   Ready    master   6d20h   v1.13.4+205da2b4a
 master-2.ocp4.gtslabs.ibm.com   Ready    master   6d20h   v1.13.4+205da2b4a
 ```
 
+The Cluster Image Registry does not pick a storage backend for vSphere platform. Therefore, the cluster operator will be stuck in progressing because it is waiting for an administrator to configure a storage backend for the image-registry.<br/>
+
+oc patch configs.imageregistry.operator.openshift.io cluster --type merge --patch '{"spec":{"storage":{"emptyDir":{}}}}' <br/>
+
+
 
 
 
